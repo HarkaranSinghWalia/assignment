@@ -3,9 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Medium Clone</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <header>
+        <div class="logo">
+            <h1>Medium</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="goToPage('about.html')">About</a></li>
+                <li><a href="#" onclick="goToPage('write.html')">Write</a></li>
+                <li><a href="#" onclick="goToPage('sign-in.html')">Sign In</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Stay curious.</h2>
+            <p>Discover stories, thinking, and expertise from writers on any topic.</p>
+            <button onclick="goToPage('get-started.html')">Get Started</button>
+        </div>
+    </section>
+
+    <section class="articles">
+        <div class="article">
+            <h3>Article Title 1</h3>
+            <p>Short description for article 1...</p>
+            <button onclick="goToPage('article1.html')">Read more</button>
+        </div>
+        <div class="article">
+            <h3>Article Title 2</h3>
+            <p>Short description for article 2...</p>
+            <button onclick="goToPage('article2.html')">Read more</button>
+        </div>
+        <div class="article">
+            <h3>Article Title 3</h3>
+            <p>Short description for article 3...</p>
+            <button onclick="goToPage('article3.html')">Read more</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Medium Clone. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function goToPage(page) {
+            window.location.href = page;
+        }
+    </script>
 </body>
 </html>
